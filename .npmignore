@@ -1,0 +1,16 @@
+# Source — compiled output in dist/ is what gets published
+src/
+examples/
+tsconfig.json
+
+# Dev tooling
+node_modules/
+.git/
+.gitignore
+
+# Claude Code
+.claude/
+
+# Misc
+*.log
+*.tgz

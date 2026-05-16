@@ -1,0 +1,51 @@
+{
+  "name": "sqlslice",
+  "version": "0.1.0",
+  "description": "Composable SQL architecture framework for breaking large relational queries, stored procedures, and materialized views into reusable maintainable slices.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "publish:dry": "npm publish --dry-run",
+    "publish:npm": "npm publish --access public"
+  },
+  "keywords": [
+    "sql",
+    "postgres",
+    "postgresql",
+    "query-builder",
+    "composable",
+    "slices",
+    "cte",
+    "typescript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "pg": ">=8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "pg": {
+      "optional": false
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
