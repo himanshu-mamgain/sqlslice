@@ -15,6 +15,9 @@ npm-debug.log*
 .env
 .env.*
 
+# Claude Code (local only)
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
